@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confess a new confession</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+    <body>
+        <div class="header_container">
+            <h1>inject your injection</h1>
+            <p>Go back to the <a href="../">madness</a></p>
+        </div>
+        <div class="header_container">
+            <form method="POST"> 
+                <label>Write your injection:</label> 
+                <input type="text" name="injection" placeholder="Enter injection" required><br/> 
+                <button type="submit" value = "submit">Send</button>
+            </form> 
+        </div>
+    </body> 
+</html>

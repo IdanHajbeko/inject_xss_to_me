@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confession Wall</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="header_container">
+        <h1>try to inject xss to this site</h1>
+        <p>Please destroy this site as much as you can</p>
+        <p>redirect deface destroy any thing you want</p>
+        <p><a href="inject">inject your injection</a></p>
+    </div>
+
+    {% for item in data[::-1] %}
+        <div class="container container_hover">
+            <p style="color: green;">
+                {{ item[1] | safe }}
+            </p>
+        </a>
+        </div>
+    {% endfor %}
+    <a href="inject"><img src="{{ url_for('static', filename='plus.png') }}" id="corner_image" alt="Post a injection" ></a>
+</body>
+</html>
