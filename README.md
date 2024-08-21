@@ -1,2 +1,2 @@
 # inject_xss_to_me
-A web site where you can inject xss to it freely
+A website where you can inject XSS to it freely
