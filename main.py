@@ -33,7 +33,7 @@ def home(_=None):
 
 
 @app.route('/inject', methods=['GET', 'POST'])
-def Post_Confession():
+def Post_injection():
     if request.method == 'POST': 
         injection = request.form['injection'] 
         try:
